@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import com.aventstack.extentreports.ExtentTest;
 
@@ -89,6 +90,32 @@ public class Dashbrd {
 			Thread.sleep(3000);
 			All_Locators.Postoppr(driver).click();
 			Thread.sleep(5000);
+			All_Locators.Profile(driver).click();
+			Thread.sleep(3000);
+			All_Locators.Editprfl(driver).click();
+			Thread.sleep(3000);
+			All_Locators.update(driver).click();
+			Thread.sleep(3000);
+			All_Locators.Vendor(driver).click();
+			Thread.sleep(3000);
+			All_Locators.viewwndr(driver).click();
+			Thread.sleep(3000);
+			All_Locators.viewbck(driver).click();
+			Thread.sleep(3000);
+			All_Locators.vndrsearch(driver).sendKeys("hjdfhfhgfh");
+			Thread.sleep(3000);
+			All_Locators.vndrsearch(driver).sendKeys(Keys.BACK_SPACE);
+			Thread.sleep(3000);
+			All_Locators.advsrch(driver).click();
+			Thread.sleep(3000);
+			All_Locators.srchbtn(driver).click();
+			Thread.sleep(3000);
+			All_Locators.editP(driver).click();
+			Thread.sleep(3000);
+			All_Locators.lgto(driver).click();
+			
+			
+			
 
 			// Looping in the excel for data
 			/*
