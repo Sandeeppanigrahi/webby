@@ -3,9 +3,11 @@ package Locators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class All_Locators{
-	
+	WebDriver driver;
+
 	
 	//Login
 	public static WebElement LGN (WebDriver driver) {WebElement lgn = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/header/div/div/div/div[2]/div/div/nav/ul/li[5]/a"));
@@ -87,8 +89,31 @@ public class All_Locators{
 	return lstnmecnt;}
 	public static WebElement Postoppr(WebDriver driver) {WebElement Post = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div/div/div[2]/form/span[4]"));
 	return Post;}
-	
-}
+	public static WebElement Profile(WebDriver driver) {WebElement prfl = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/header/div/div/div/div[2]/div/div[3]/a/em/span"));
+	return prfl;}
+	public static WebElement Editprfl(WebDriver driver) {WebElement EP = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/header/div/div/div/div[2]/div/div[3]/div/ul/li[1]/a"));
+	return EP;}
+    public static WebElement update(WebDriver driver) {WebElement updt = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/form/div/div[2]/div/span"));
+    return updt;}
+    public static WebElement Vendor(WebDriver driver) {WebElement vndr = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/header/div/div/div/div[2]/div/div[1]/nav/ul/li[3]/a"));
+    return vndr;}
+    public static WebElement viewwndr (WebDriver driver) {WebElement viewvn  = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div/div[3]/div[2]/div[2]/table/tbody/tr[1]/td[8]/div/a[1]/i"));
+    return viewvn ;}
+    public static WebElement viewbck (WebDriver driver) {WebElement back  = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div/div[1]/div/div[1]/button"));
+    return back;}
+    public static WebElement vndrsearch (WebDriver driver) {WebElement srchvn = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div/div[3]/div[1]/div/div[2]/div/input"));
+    return srchvn ;}
+    public static WebElement advsrch (WebDriver driver) {WebElement Advsrc = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div/div[1]/a"));
+    return Advsrc ;}
+    public static WebElement srchbtn (WebDriver driver) {WebElement SrcBtn = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[2]/div/div/div[1]/form/div/div/div/span"));
+    return SrcBtn;}
+    public static WebElement editP (WebDriver driver) {WebElement EDITP = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/header/div/div/div/div[2]/div/div[3]/a/em/span"));
+    return EDITP;}
+    public static WebElement lgto (WebDriver driver) {WebElement Logout = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/header/div/div/div/div[2]/div/div[3]/div/ul/li[7]/a"));
+    return Logout;}
+    
+    }
+
 
 	/*
 	 * //Salary Components public static WebElement SalaryComp(WebDriver driver)
